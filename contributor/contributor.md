@@ -3,6 +3,4 @@ syed
  Abdullah
 
 - *Abdullah Jawed*
-
-
-
+- *Malik Fouzan Khan*
