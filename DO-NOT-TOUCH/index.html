@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How to do Open Source Contribution — Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .prose code {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.3rem;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- HEADER -->
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-14 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl font-extrabold">How to do Open Source Contribution</h1>
+            <p class="mt-3 text-sm sm:text-base opacity-90">
+                A complete beginner-friendly guide for contributing to open-source projects — code or non-code, made
+                with ❤️ using Tailwind CSS.
+            </p>
+            <div class="mt-6 flex flex-col sm:flex-row justify-center gap-3">
+                <a href="https://github.com/codeforindia-foundation/open-source-contribution" target="_blank"
+                    class="bg-white/20 hover:bg-white/30 px-5 py-2 rounded-md text-sm font-medium">
+                    View Repository
+                </a>
+                <a href="https://github.com/codeforindia-foundation/open-source-contribution" target="_blank"
+                    class="bg-white text-blue-700 hover:bg-blue-50 px-5 py-2 rounded-md text-sm font-medium">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-2xl mx-auto px-6 py-12 space-y-8">
+
+        <!-- Overview -->
+        <section id="overview" class="bg-white p-6 rounded-2xl shadow-sm">
+            <h2 class="text-xl font-semibold mb-2">Overview</h2>
+            <p class="text-sm text-gray-700">
+                This guide walks you through the real process of contributing to open-source — from reaching out to
+                maintainers
+                to making Pull Requests, handling reviews, and collaborating respectfully.
+            </p>
+        </section>
+
+        <!-- Quick Steps -->
+        <section id="quick-steps" class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">Quick Checklist</h3>
+            <ol class="list-decimal pl-5 space-y-2 text-sm">
+                <li>Contact project members (Twitter / Discord / Email) — ask if you can contribute.</li>
+                <li>Open an issue describing what you plan to work on.</li>
+                <li>Get the issue assigned to you with a clear deadline.</li>
+                <li>Work and add value — code or non-code contributions are both valid.</li>
+                <li>Make a Pull Request (PR) and be open to feedback.</li>
+                <li>Have patience — follow up politely after 2 weeks if needed.</li>
+            </ol>
+        </section>
+
+        <!-- Contributor Workflow -->
+        <section id="workflow" class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">Contributor Workflow (Step-by-Step)</h3>
+            <ol class="list-decimal pl-5 space-y-3 text-sm">
+                <li><strong>Talk to the People:</strong> Send a short, polite message on Discord/Twitter or via email
+                    introducing yourself.</li>
+                <li><strong>Open an Issue:</strong> Explain the bug or feature idea clearly. Include screenshots if
+                    relevant.</li>
+                <li><strong>Get Assigned:</strong> Ask the maintainer to assign it and agree on a rough timeline.</li>
+                <li><strong>Do the Work:</strong> Implement, document, and test your changes. Keep commits clean.</li>
+                <li><strong>Make a Pull Request:</strong> Describe what you did, why, and how to test. Add screenshots
+                    if needed.</li>
+                <li><strong>Iterate & Respond:</strong> Be polite in discussions and update your PR based on feedback.
+                </li>
+                <li><strong>Patience:</strong> Wait for a response — maintainers are often volunteers.</li>
+            </ol>
+        </section>
+
+        <!-- Git Commands -->
+        <section id="add-contributor" class="bg-white p-6 rounded-2xl shadow-sm mt-6">
+            <h3 class="text-xl font-semibold mb-3">Add Yourself to the Contributors List</h3>
+            <p class="text-sm mb-3 text-gray-700">
+                Once you’ve created your folder and README, follow these commands to add your name to the main
+                <code>README.md</code> contributors table.
+            </p>
+
+            <pre class="bg-gray-100 p-4 rounded-md overflow-x-auto text-xs"><code>
+
+
+    git clone https://github.com/codeforindia-foundation/open-source-contribution.git
+    cd open-source-contribution
+    cd contributers
+    
+    # Open the main README file
+    nano README.md
+    
+    # Scroll to the "🧑‍💻 Contributors" section
+    
+    # Add your entry in the same format below 👇
+    
+    | [Your Name](https://github.com/YOUR-USERNAME) | ✨ |
+    
+    # Example:
+    | [Suhail Roushan](https://github.com/suhailroushan) | 👋 |
+    
+    # Save & exit
+    # (In nano: press Ctrl + O, Enter, then Ctrl + X)
+    
+    # Stage, commit, and push your update
+    git add README.md
+    git commit -m "chore: add YOUR-NAME to contributors list"
+    git push origin feature-name
+      </code></pre>
+
+            <p class="text-xs mt-2 text-gray-500">
+                Tip: Use a fun emoji that represents your personality — like 🚀, 💡, 🎯, or 👋
+            </p>
+        </section>
+
+
+        <!-- PR Writing -->
+        <section id="pr-writing" class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">Writing a Good Pull Request</h3>
+            <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li><strong>Title:</strong> short, clear, and action-based (<code>fix(ui): align login button</code>).
+                </li>
+                <li><strong>Description:</strong> explain what you changed, why, and how to test it.</li>
+                <li><strong>Checklist:</strong> include what you tested or verified before submitting.</li>
+                <li><strong>Commits:</strong> keep them focused and meaningful — avoid “fix typo” spam commits.</li>
+            </ul>
+        </section>
+
+        <!-- Owner and Contributor Post-Merge -->
+        <section id="owner-side" class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">After Your Pull Request</h3>
+            <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li><strong>Maintainer:</strong> reviews the PR, checks CI/tests, requests changes if needed, then
+                    merges.</li>
+                <li><strong>Contributor:</strong> waits patiently, updates when requested, and celebrates once merged!
+                </li>
+                <li>After merge — delete your local branch and stay connected for more contributions.</li>
+            </ul>
+        </section>
+
+        <!-- Mindset -->
+        <section id="mindset" class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">Mindset & Etiquette</h3>
+            <ul class="list-disc pl-5 space-y-2 text-sm">
+                <li>Contributions are collaborations, not competitions.</li>
+                <li>Always be respectful and patient with maintainers.</li>
+                <li>Even if your PR isn’t merged, you’ve learned — that’s success too.</li>
+            </ul>
+        </section>
+
+        <!-- Non-code Contributions -->
+        <section id="non-code" class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">Non-Code Contributions</h3>
+            <p class="text-sm text-gray-700">
+                Design, documentation, translations, and testing are equally valuable.
+                Open an issue, get it assigned, and follow the same contribution flow.
+            </p>
+        </section>
+
+        <!-- Communication Template -->
+        <section id="templates" class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-semibold mb-4">Message Template (for Maintainers)</h3>
+            <pre class="bg-gray-100 p-4 rounded-md overflow-x-auto text-xs"><code>
+Hi @maintainer-name,
+
+I'd like to contribute a fix for &lt;issue-link&gt;.
+I can handle unit tests and documentation updates.
+Could you please assign this to me?
+
+Thanks,  
+Your Name (GitHub: @your-username)
+      </code></pre>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-xs text-gray-500 pt-10 pb-6 border-t border-gray-200">
+            <p>
+                Created for <a href="https://github.com/codeforindia-foundation/open-source-contribution"
+                    class="underline">
+                    codeforindia-foundation/open-source-contribution</a>.
+            </p>
+            <p class="mt-1">Feel free to reuse, adapt, and improve this guide.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
