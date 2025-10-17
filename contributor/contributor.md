@@ -1,8 +1,5 @@
 syed
 # Names
- Abdullah
-
-- *Abdullah Jawed*
-
-
-
+- **Syed Ibrahim Ali**
+- *Malik Fouzan Khan*
+- mohammed afnaan
