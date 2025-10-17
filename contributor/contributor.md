@@ -1,8 +1,4 @@
 syed
 # Names
- Abdullah
-
-- *Abdullah Jawed*
-
-
+ **RUPJIT DHALI**
 
